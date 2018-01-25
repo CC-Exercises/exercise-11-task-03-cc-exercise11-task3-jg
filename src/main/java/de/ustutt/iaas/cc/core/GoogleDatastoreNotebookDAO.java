@@ -56,6 +56,8 @@ public class GoogleDatastoreNotebookDAO implements INotebookDAO {
 			result.add(note);
 		}
     	
+		logger.info("Loaded " + result.size() + " notes from google datastore");
+		
     	return result;
     }
 
